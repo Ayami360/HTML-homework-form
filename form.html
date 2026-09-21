@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表格練習</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>個人報名 Individual Registration</h1>
+    </nav>
+
+    <main>
+      <form action="">
+        <!-- 基本資料 -->
+
+        <h6>基本資料 / Basic Information</h6>
+        <br />
+
+        <div>
+          <label for="name">姓名 / Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="請輸入姓名"
+            required
+          />
+          <br />
+
+          <p>性別 / Gender</p>
+          <input type="radio" id="gender-male" name="gender" value="male" />
+          <label for="gender-male">男 / male</label>
+          <input type="radio" id="gender-female" name="gender" value="female" />
+          <label for="gender-female">女 / female</label>
+          <br />
+
+          <p>國籍 / Nationality</p>
+          <input
+            type="radio"
+            id="ROG Citizens"
+            name="Nationality"
+            value="ROG Citizens"
+          />
+          <label for="ROG Citizens">本國國籍 / ROG Citizens</label>
+          <input
+            type="radio"
+            id="non-citizens"
+            name="Nationality"
+            value="Non-Citizens"
+          />
+          <label for="non-citizens">外國國籍 / Non-Citizens</label>
+          <br />
+
+          <label for="id-number">身分證號 / ID Number</label>
+          <input
+            type="text"
+            id="id-number"
+            name="ID-Number"
+            placeholder="身分證號或護照號碼"
+            required
+          />
+          <br />
+
+          <p>出生日期 / Date Of Birth</p>
+          <label for="birth-year"></label>
+          <select id="birth-year" name="birth-year">
+            <option value="">年 Year</option>
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+          </select>
+          <label for="birth-month"></label>
+          <select id="birth-month" name="birth-month">
+            <option value="">月 Month</option>
+            <option value="Jan">1月</option>
+            <option value="Feb">2月</option>
+            <option value="Mar">3月</option>
+          </select>
+          <label for="birth-day"></label>
+          <select id="birth-day" name="birth-day">
+            <option value="">日 Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <br />
+
+          <label for="email">電子信箱 / Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@mail.com"
+            required
+          />
+          <br />
+          <p>連絡電話 / Contact Number</p>
+          <label for="mobile">手機 / Mobile</label>
+          <input
+            type="tel"
+            id="mobile"
+            name="contact-number"
+            placeholder="0922053012"
+            maxlength="10"
+          />
+          <label for="home">住家 / Home</label>
+          <input
+            type="tel"
+            id="home"
+            name="contact-number"
+            placeholder="0225855659"
+            maxlength="10"
+          />
+          <label for="office">公司 / Office</label>
+          <input type="tel" id="office" name="contact-number" />
+          <br />
+
+          <p>通訊地址 / Mailing Adress</p>
+          <label for="city"></label>
+          <select id="city" name="city">
+            <option value="">請選擇縣市別 Country/City</option>
+            <option value="keelung">基隆</option>
+            <option value="taipei">臺北</option>
+            <option value="yilan">宜蘭</option>
+          </select>
+          <label for="township"></label>
+          <select id="township" name="township">
+            <option value="">請選擇鄉鎮區別 Township</option>
+            <option value="xinyi">信義區</option>
+            <option value="ren'ai">仁愛區</option>
+            <option value="zhongxiao">忠孝區</option>
+          </select>
+          <label for="postcode"></label>
+          <input
+            type="text"
+            id="postcode"
+            name="postcode"
+            size="3"
+            placeholder="郵遞區號"
+            maxlength="6"
+          />
+          <label for="address"></label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            size="30"
+            placeholder="例如：吉昌街55號2樓206室"
+          />
+          <br />
+
+          <label for="name-of-emergency-contact"
+            >緊急聯絡人姓名 / Name of Emergency Contact</label
+          >
+          <input
+            type="text"
+            id="name-of-emergency-contact"
+            name="name-of-emergency-contact"
+          />
+          <label for="relationship">關係 / Relationship</label>
+          <input type="text" id="relationship" name="relationship" />
+          <label for="phone">電話 / Phone</label>
+          <input type="text" id="phone" name="phone" />
+        </div>
+
+        <!-- 競賽項目資料 -->
+        <h6>競賽項目資料 / Race Category Information</h6>
+        <br />
+
+        <div>
+          <input type="checkbox" id="9km" name="9km" />
+          <label for="9km">9KM（NTD 800）</label>
+          <label for="9km-clothes-size"></label>
+          <select id="9km-clothes-size" name="9km-clothes-size">
+            <option value="">請選擇衣服尺寸</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+          </select>
+          <br />
+
+          <input type="checkbox" id="3km" name="3km" />
+          <label for="3km">3KM（NTD 650）</label>
+          <label for="3km-clothes-size"></label>
+          <select id="3km-clothes-size" name="3km-clothes-size">
+            <option value="">請選擇衣服尺寸</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+          </select>
+        </div>
+
+        <!-- 報到方式 -->
+        <h6>報到方式(二擇一) / Check-in Method</h6>
+        <br />
+
+        <div>
+          <p>郵寄代理報到 / Postal delivery check-in</p>
+          <input
+            type="radio"
+            id="yes"
+            name="postal-delivery-check-in"
+            value="yes"
+          />
+          <label for="yes">是 / Y（需額外付費，限台灣本島）</label>
+          <input
+            type="radio"
+            id="no"
+            name="postal-delivery-check-in"
+            value="no"
+          />
+          <label for="no">否 / N</label>
+          <br />
+
+          <input
+            type="radio"
+            id="taipei-expo-park"
+            name="taipei-expo-park"
+            value="check"
+          />
+          <label for="taipei-expo-park"
+            >地點：花博爭豔館（臺北市中山區玉門街1號）</label
+          >
+          <label for="startdate">時間：</label>
+          <input type="date" id="startdate" name="startdate" min="2026-12-17" />
+          ~
+          <label for="enddate"></label>
+          <input type="date" id="enddate" name="enddate" />
+        </div>
+
+        <!--其他-->
+        <h6>其他 / Others</h6>
+        <br />
+
+        <div>
+          <label for="website">個人網站 / Website（選填）</label>
+          <input
+            type="url"
+            id="website"
+            name="website"
+            placeholder="https://"
+          />
+          <br />
+
+          <label for="note">備註 / Note</label>
+          <textarea
+            id="note"
+            name="note"
+            placeholder="如有特殊需求請於此說明"
+            rows="4"
+            cols="55"
+          ></textarea>
+          <br />
+
+          <label for="photo">上傳證件照 / Upload Photo</label>
+          <input type="file" id="photo" name="photo" />
+        </div>
+
+        <button class="blue-button">送出報名</button>
+
+        <label for="reset"></label>
+        <button type="reset" id="reset" name="reset">清除重填</button>
+      </form>
+    </main>
+  </body>
+</html>
